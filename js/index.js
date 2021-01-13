@@ -1,6 +1,6 @@
 class App {
     async convertUrl(url) {
-        let raw = `http://biud436.com:9003/insertUrl?url=${url}`;
+        let raw = `https://biud436.com:9004/insertUrl?url=${url}`;
 
         this.load(raw).then(ret => {
             ret = JSON.parse(ret);
@@ -9,7 +9,7 @@ class App {
                 const divElem = document.createElement("div");
                 divElem.innerHTML = `
                 <div id="message" class="row alert alert-primary" role="alert">
-                    http://biud436.com:9003/${ret.shortUrl}
+                    https://biud436.com:9004/${ret.shortUrl}
                 </div>                          
                 `;
                 const wrapper = document.querySelector(".wrapper");
