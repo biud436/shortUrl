@@ -15,9 +15,9 @@ class App {
                 const wrapper = document.querySelector(".wrapper");
                 wrapper.appendChild(divElem);
 
-                setTimeout(() => {
-                    divElem.remove();
-                }, 4000);
+                // setTimeout(() => {
+                //     divElem.remove();
+                // }, 10000);
             }
         }).catch(err => {
             console.warn(err);
